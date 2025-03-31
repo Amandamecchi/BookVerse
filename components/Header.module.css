@@ -95,7 +95,7 @@
   background-color: #0070f3; /* Cor de fundo do botão */
   color: #fff; /* Cor do ícone */
   border: none; /* Remove a borda padrão */
-  border-radius: 50%; /* Botão circular */
+  border-radius: 60%; /* Botão circular */
   width: 30px; /* Largura do botão */
   height: 30px; /* Altura do botão */
   display: flex;

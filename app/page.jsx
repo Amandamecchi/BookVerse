@@ -10,8 +10,12 @@ const Page = () => {
   return (
     <div>
       <Header />
-      <main>
-        <h2>Bem-vindo ao BooksVerse!</h2>
+      <main style={styles.main}>
+        <h2>Descubra mundos extraordinários!</h2>
+        <p>Promoção de lançamento com até 30% de desconto</p>
+        <button className={styles.botao} onClick={() => alert('Botão clicado!')}>
+         Ver ofertas
+        </button>
       </main>
     </div>
   );
