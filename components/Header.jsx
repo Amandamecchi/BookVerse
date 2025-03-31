@@ -2,29 +2,40 @@ import styles from '../components/Header.module.css';
 
 const Header = () => {
   return (
-    <div>
+    <div className={styles.header}>
       <div className={styles.container}>
         <h1 className={styles.title}> 📚 BooksVerse</h1>
-        <p className={styles.content}>Onde histórias ganham vida!</p>
-        <p className={styles.content}>Explore um universo de livros e descubra novas aventuras. Aqui, cada página é uma porta para um mundo diferente.</p>
+        <p className={styles.slogan}>Onde histórias ganham vida!</p>
       </div>
 
-      <div>
-        <h2 className={styles.subtitle}>Categorias</h2>
+      <nav className={styles.nav}>
         <ul className={styles.linkList}>
           <li>
-            <a href="/fiction" className={styles.link}>Ficção</a>
+            <a href="/home" className={styles.link}>Início</a>
           </li>
           <li>
-            <a href="/non-fiction" className={styles.link}>Não Ficção</a>
+            <a href="/livros" className={styles.link}>Livros</a>
           </li>
           <li>
-            <a href="/adventure" className={styles.link}>Aventura</a>
+            <a href="/categorias" className={styles.link}>Categorias</a>
           </li>
           <li>
-            <a href="/mystery" className={styles.link}>Mistério</a>
+            <a href="/autores" className={styles.link}>Autores</a>
+          </li>
+          <li>
+            <a href="/offers" className={styles.link}>Ofertas</a>
           </li>
         </ul>
+      </nav>
+      <div className={styles.barraPesquisa}>
+        <input type="text" placeholder="peasquisar" className={styles.inputPesquisar} />
+        <button className={styles.lupa}>🔍</button>
+      </div>
+
+      <div className={styles.icones}>
+        <h2 className={styles.icone}>❤️</h2> 
+        <h2 className={styles.icone}>🛒</h2> 
+        <h2 className={styles.icone}>👤</h2>  
       </div>
     </div>
   );

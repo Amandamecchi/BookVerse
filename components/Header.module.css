@@ -1,72 +1,118 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
 
-  .container {
-    
-  }
-  
-  .content {
-    height: 60px;
-  }
-  
-  .title {
-    color: #2ba84a;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
+}
 
-  .nav {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-  }
-  
-  .nav a.active {
-    color: #2ba84a;
-    border-bottom: 2px solid #2ba84a;
-    padding-bottom: 3px;
-  }
-  
-  /* Barra de Pesquisa */
-  .searchContainer {
-    position: relative;
-  }
-  
-  .searchInput {
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    padding: 5px 10px;
-    width: 200px;
-    outline: none;
-  }
-  
-  .searchButton {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    color: #2ba84a;
-    cursor: pointer;
-  }
+.container {
+  display: flex;
+  flex-direction: column;
+}
 
-  .linkList{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.slogan {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.linkList {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff; 
+  border-bottom: 1px solid #ddd; 
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 20px; 
+}
+
+.slogan {
+  font-size: 14px;
+  color: #666;
+  margin-left: 10px;
+}
+
+.link:hover {
+  color: #1e2c3b;
+}
+
+.linkList li {
+  margin-right: 20px; 
+}
+
+.link {
+  text-decoration: none;
+  color: #0070f3;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: #1e2c3b;
+}
+
+.barraPesquisa {
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1; /* Cor de fundo da barra */
+  border: 1px solid #ccc; /* Borda da barra */
+  border-radius: 30px; /* Bordas arredondadas */
+  padding: 5px 10px; /* Espaçamento interno */
+  width: 300px; /* Largura da barra */
+}
+
+.inputPesquisar {
+  flex: 1; /* Faz o campo de entrada ocupar o máximo de espaço */
+  border: none; /* Remove a borda padrão */
+  outline: none; /* Remove o contorno ao focar */
+  background: transparent; /* Fundo transparente */
+  font-size: 14px; /* Tamanho da fonte */
+  padding: 5px; /* Espaçamento interno */
+}
+
+.lupa {
+  background-color: #0070f3; /* Cor de fundo do botão */
+  color: #fff; /* Cor do ícone */
+  border: none; /* Remove a borda padrão */
+  border-radius: 50%; /* Botão circular */
+  width: 30px; /* Largura do botão */
+  height: 30px; /* Altura do botão */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+  transition: background-color 0.3s; /* Transição suave */
+}
+
+.lupa:hover {
+  background-color: #0056b3; /* Cor ao passar o mouse */
+}
+
+.icones {
+  display: flex;
+  align-items: center;
+  margin-left: 40px; /* Espaçamento à esquerda dos ícones */
+  gap: 20px; 
+  cursor: pointer;
+}
