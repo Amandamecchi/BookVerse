@@ -1,17 +1,26 @@
-.header {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff; 
+  border-bottom: 1px solid #ddd; 
+  font-family: 'Poppins', sans-serif;
 }
 
 .container {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+
 }
 
 .title {
   font-size: 24px;
   font-weight: bold;
-  margin: 0;
-}
+  margin-right: 10px;}
 
 .slogan {
   font-size: 14px;
@@ -24,15 +33,6 @@
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  background-color: #fff; 
-  border-bottom: 1px solid #ddd; 
 }
 
 .container {
@@ -75,44 +75,42 @@
 .barraPesquisa {
   display: flex;
   align-items: center;
-  background-color: #f1f1f1; /* Cor de fundo da barra */
-  border: 1px solid #ccc; /* Borda da barra */
-  border-radius: 30px; /* Bordas arredondadas */
-  padding: 5px 10px; /* Espaçamento interno */
-  width: 300px; /* Largura da barra */
+  background-color: #f1f1f1; 
+  border: 1px solid #ccc; 
+  border-radius: 30px; 
+  padding: 5px 10px; 
+  width: 300px; 
 }
 
 .inputPesquisar {
-  flex: 1; /* Faz o campo de entrada ocupar o máximo de espaço */
-  border: none; /* Remove a borda padrão */
-  outline: none; /* Remove o contorno ao focar */
-  background: transparent; /* Fundo transparente */
-  font-size: 14px; /* Tamanho da fonte */
-  padding: 5px; /* Espaçamento interno */
+  flex: 1; 
+  border: none; 
+  outline: none; 
+  background: transparent; 
+  font-size: 14px; 
+  padding: 5px; 
 }
 
 .lupa {
-  background-color: #0070f3; /* Cor de fundo do botão */
-  color: #fff; /* Cor do ícone */
-  border: none; /* Remove a borda padrão */
-  border-radius: 60%; /* Botão circular */
-  width: 30px; /* Largura do botão */
-  height: 30px; /* Altura do botão */
+  background-color: #0070f3; 
+  border: none; 
+  border-radius: 50%; 
+  width: 35px; 
+  height: 35px; 
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
-  transition: background-color 0.3s; /* Transição suave */
+  cursor: pointer;
 }
 
 .lupa:hover {
-  background-color: #0056b3; /* Cor ao passar o mouse */
+  background-color: #0056b3; 
 }
 
 .icones {
   display: flex;
   align-items: center;
-  margin-left: 40px; /* Espaçamento à esquerda dos ícones */
+  margin-left: 60px; 
   gap: 20px; 
   cursor: pointer;
 }

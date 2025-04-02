@@ -21,13 +21,13 @@ h2 {
   color: #333;
   font-size: 24px;
   margin-top: 8%;
-  margin-bottom: 3%; /* Reduza a margem inferior */
+  margin-bottom: 3%; 
 }
 
 p {
   color: #666;
   font-size: 16px;
-  margin-bottom: 3%; /* Reduza a margem superior */
+  margin-bottom: 3%; 
 }
 
 button {
