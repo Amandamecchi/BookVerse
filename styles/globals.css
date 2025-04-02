@@ -11,7 +11,7 @@ main {
   margin: 0 auto; 
   margin-top: 20px;
   text-align: center;
-  background-color: #25d85a;
+  background-color: #e0b3cc;
 }
 
 h2 {
@@ -34,13 +34,13 @@ button {
   padding: 10px 20px;
   font-size: 16px;
   color: #fff;
-  background-color: #007bff;
+  background-color: #c36c7c;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #f0bed0;
 }
 
